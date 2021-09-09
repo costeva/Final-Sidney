@@ -1,0 +1,176 @@
+.grupocaja > h2 {
+  margin: 20px auto;
+  text-align: center;
+  font-size: 35px;
+  text-shadow: rgba(0, 0, 0, 0.2) 1px 5px 2px;
+}
+
+.bloqueQue {
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+div > h3 {
+  font-size: 30px;
+  font-weight: 20px;
+  padding-top: 10px;
+}
+
+.txtizquierda {
+  max-width: calc(50% - 60px);
+  line-height: 1.4;
+  float: left;
+  padding: 0 30px;
+}
+img {
+  max-width: 100%;
+  width: 100%;
+}
+.txtizquierda p {
+  margin-top: 20px;
+}
+
+.imgizquierda {
+  width: 620px;
+  float: left;
+  max-width: 50%;
+}
+.centro li:nth-child(even) {
+  background-color: #f4f2ef;
+}
+
+.caja1 > img {
+  max-width: 100%;
+}
+.grupocaja {
+  text-align: center;
+  height: auto;
+  padding-bottom: 20px;
+}
+
+.grupocaja > .caja1 {
+  box-sizing: border-box;
+  color: #484848;
+  display: inline-block;
+  width: 27%;
+  margin: 10px;
+  background-color: white;
+  text-align: left;
+  vertical-align: top;
+}
+
+.caja1 h3 {
+  margin: 20px auto;
+}
+
+@media screen and (max-width: 800px) {
+  .centro > h2 {
+    font-size: 30px;
+    height: 150px;
+    margin: 0px auto;
+    background-image: url(../elementos/ciudadfinal-tablet.png);
+    background-position: center;
+  }
+
+  .txtizquierda h3 {
+    font-size: 28px;
+    margin-top: 5px;
+  }
+  .txtizquierda {
+    max-width: 100%;
+    line-height: 1.3;
+    display: block;
+    padding: 0 10px;
+    float: none;
+  }
+
+  .txtizquierda p {
+    margin: 10px auto;
+  }
+  .imgizquierda {
+    width: 580px;
+    display: block;
+    max-width: 100%;
+    float: none;
+  }
+  .centro li:nth-child(even) {
+    background-color: white;
+  }
+
+  .bloqueQue {
+    display: block;
+    padding-top: 10px;
+    margin-top: 0;
+  }
+
+  .grupocaja .caja1 {
+    width: 100%;
+    text-align: inherit;
+    margin: 0;
+  }
+
+  .caja1 h3,
+  p {
+    margin: 8px 40px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .centro > h2 {
+    font-size: 30px;
+    height: 150px;
+    margin: 0px auto;
+    background-image: url(../elementos/ciudadeco-mobile.png);
+    background-position: center;
+  }
+
+  .txtizquierda {
+    max-width: 100%;
+    line-height: 1.2;
+    display: block;
+    padding: 0 10px;
+  }
+
+  .imgizquierda {
+    width: 350px;
+
+    display: block;
+    max-width: 100%;
+  }
+
+  .txtizquierda p {
+    margin-top: 10px;
+  }
+  .txtizquierda h3 {
+    font-size: 28px;
+  }
+
+  .bloqueQue {
+    display: block;
+    margin-top: 10px;
+  }
+
+  .caja1 > img {
+    max-width: 100%;
+    margin-top: 20px;
+  }
+
+  .grupocaja h2 {
+    font-size: 30px;
+  }
+  .grupocaja .caja1 {
+    width: 100%;
+    text-align: center;
+    margin: 0px;
+  }
+
+  .caja1 h3 {
+    margin: 10px auto;
+    font-size: 28px;
+    padding-left: 10px;
+  }
+
+  .caja1 p {
+    padding: 10px 12px;
+  }
+}

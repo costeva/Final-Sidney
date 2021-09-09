@@ -1,0 +1,173 @@
+.grupo {
+  padding-bottom: 20px;
+  display: inline;
+}
+
+.grupo > .caja1 {
+  box-sizing: border-box;
+  color: #484848;
+  display: inline-block;
+  width: 366px;
+  margin: 10px;
+  background-color: white;
+  border: solid 1px #2828f8;
+}
+article header h3 {
+  background-color: #2828f8;
+  color: white;
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+
+article header p {
+  font-size: 15px;
+  font-family: arial;
+  color: black;
+  font-weight: 600;
+  margin-bottom: 10px;
+  margin-left: 5px;
+}
+
+.texto {
+  padding-bottom: 10px;
+  margin-left: 5px;
+}
+
+article footer p {
+  font-size: 14px;
+  font-family: arial;
+  color: black;
+  font-weight: 600;
+  margin-bottom: 10px;
+  margin-left: 5px;
+}
+
+figure figcaption {
+  margin-left: 5px;
+  font-size: 12px;
+}
+
+.boton {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.boton a {
+  background-color: #2828f8;
+  box-shadow: 5px 5px 5px blue;
+  border-radius: 0.9rem;
+  margin: 5px;
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  font-size: 20px;
+  width: 100px;
+}
+
+.modalcontenido {
+  background-color: white;
+  max-width: 550px;
+  padding: 10px 20px;
+  margin: 5% auto;
+  position: relative;
+  text-align: center;
+}
+.modalcontenido a {
+  padding-left: 100%;
+}
+.modalcontenido iframe {
+  margin: 30px;
+}
+.modalcontenido img {
+  margin: 30px;
+}
+
+.modal {
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal h4 {
+  font-size: 25px;
+}
+#ventanamodal:target,
+#ventanamodal2:target,
+#ventanamodal3:target,
+#ventanamodal4:target,
+#ventanamodal5:target,
+#ventanamodal6:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+@media screen and (max-width: 800px) {
+  .centro > h2 {
+    font-size: 30px;
+    height: 150px;
+    margin: 0px auto;
+    background-image: url(../elementos/ciudadfinal-tablet.png);
+    background-position: center;
+  }
+  .grupo > .caja1 {
+    max-width: 288.4px;
+    margin: 10px 0px 10px 0;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  .modalcontenido {
+    max-width: 580px;
+  }
+  .modalcontenido iframe {
+    margin: 10px auto;
+    width: 520px;
+  }
+  .modalcontenido img {
+    margin: 10px auto;
+    width: 520px;
+  }
+
+  .modalcontenido p {
+    width: 500px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .centro > h2 {
+    font-size: 30px;
+    height: 150px;
+    margin: 0px auto;
+    background-image: url(../elementos/ciudadeco-mobile.png);
+    background-position: center;
+  }
+
+  .grupo > .caja1 {
+    max-width: 350px;
+    margin: 10px 0px 10px 0px;
+  }
+  .modalcontenido {
+    max-width: 350px;
+  }
+  .modalcontenido iframe {
+    margin: 10px auto;
+    width: 350px;
+  }
+  .modalcontenido img {
+    margin: 10px auto;
+    width: 350px;
+  }
+
+  .modalcontenido p {
+    width: 340px;
+    margin: 0 auto;
+  }
+}

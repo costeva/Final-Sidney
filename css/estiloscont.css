@@ -1,0 +1,161 @@
+section:first-of-type {
+  padding-bottom: 1px;
+}
+
+form {
+  background-color: #2828f8;
+  margin: 20px auto;
+  width: 850px;
+  color: white;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 10px;
+  height: 520px;
+}
+
+form div {
+  position: relative;
+  margin: 20px;
+}
+
+form span {
+  font-size: 20px;
+}
+
+input,
+textarea {
+  width: 300px;
+  outline: none;
+  display: block;
+  background: none;
+  color: white;
+  font-size: 15px;
+  padding: 5px;
+  resize: none;
+  border-radius: 0.9rem;
+}
+
+.consulta {
+  width: 100%;
+  display: inline-block;
+}
+
+button {
+  font-family: arial;
+  background-color: grey;
+  border: none;
+  width: 300px;
+  margin: auto;
+  display: block;
+  border-radius: 0.9rem;
+  color: white;
+  height: 30px;
+  font-size: 20px;
+}
+form .asunto {
+  text-align: center;
+
+  margin-bottom: 50px;
+  font-size: 20px;
+}
+
+form .izquierda {
+  display: inline-block;
+  padding-left: 30px;
+}
+
+form .derecha {
+  display: inline-block;
+}
+
+@media screen and (max-width: 800px) {
+  .centro > h2 {
+    font-size: 30px;
+    height: 150px;
+    margin: 0px auto;
+    background-image: url(../elementos/ciudadfinal-tablet.png);
+    background-position: center;
+  }
+
+  form {
+    margin: 10px auto;
+    width: 580px;
+    color: white;
+    height: 550px;
+  }
+
+  form div {
+    margin: 7px 20px;
+  }
+  input,
+  textarea {
+    width: 480px;
+    font-size: 15px;
+    padding: 5px;
+  }
+  .consul {
+    margin: 7px 40px;
+    width: 85%;
+  }
+  form .asunto {
+    margin-bottom: 0px;
+    padding: 15px 0px;
+  }
+
+  form .izquierda {
+    padding-left: 0px;
+    bottom: -10px;
+  }
+
+  button {
+    width: 200px;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .centro > h2 {
+    font-size: 30px;
+    height: 100px;
+    margin: 0px auto;
+    background-image: url(../elementos/ciudadeco-mobile.png);
+    background-position: center;
+  }
+
+  form {
+    margin: 5px auto;
+    width: 350px;
+    color: white;
+    height: 550px;
+  }
+
+  form div {
+    margin: 5px;
+  }
+  input,
+  textarea {
+    width: 300px;
+    font-size: 15px;
+    padding: 5px;
+  }
+  .consul {
+    margin: 7px 10px;
+    width: 85%;
+  }
+  form .asunto {
+    margin-bottom: 0px;
+    padding: 15px 0px;
+  }
+
+  form .izquierda {
+    padding-left: 0px;
+    bottom: -10px;
+  }
+
+  form .derecha {
+    display: inline-block;
+  }
+  button {
+    width: 200px;
+    margin-top: 20px;
+  }
+}

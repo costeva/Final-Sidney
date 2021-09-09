@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Formulario de consultas sobre Sidney">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="css/estilos.css"> 
+    <link rel="stylesheet" href="css/estiloscont.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Montserrat&display=swap"
+        rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"/>
+
+    <title>Formulario de consultas al turista</title>
+</head>
+
+<body>
+    <div class="principal">
+
+        <header>
+            <nav class="navio">
+                <a href="#menu" id="hamguerger"class="btn-hamguerger">Menu </a>
+                <ul class="menu" id="menu">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="quehacer.html">Qué hacer</a>
+                        <ul class="submenu">
+                            <li>
+                                <a href="quehacer.html#lugar1">Opera Sidney</a>
+                            </li>
+                            <li>
+                                <a href="quehacer.html#lugar2">Puente Sidney</a>
+                            </li>
+                            <li>
+                                <a href="quehacer.html#lugar3">Playa Bondi</a>
+                            </li>
+                            <li>
+                                <a href="quehacer.html#lugar4">Barrio Rock</a>
+                            </li>
+                            <li>
+                                <a href="quehacer.html#lugar5">Zologico</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="novedades.html">Novedades</a>
+                    </li>
+                    <li>
+                        <a href="contacto.html">Contacto</a>
+                    </li>
+                    <li><a href="#close" class="btn-close">close</a></li>
+                </ul>
+            </nav>
+            <div class="slidervid">
+
+                <video autoplay="" loop="" muted="" playsinline="" width="1366">
+                    <source src="imagenyvideos/sidney_1.mp4" type="video/mp4">
+                    <source src="imagenyvideos/Sidney_7.webmvp8.webm" type="video/webm">
+                </video>
+            </div>
+
+            <div class="cabeza">
+                <h1>Formulario al turista</h1>
+                <p>Estamos aquí para vos</p>
+            </div>
+        </header>
+        <main>
+        <div class="centro">
+            <h2>Dejanos tu consulta</h2>
+            <section>
+                    <form action="datos.php"
+                        method="POST">
+
+                        <div class="izquierda">
+
+                            <div>
+                                <span>Tu nombre</span>
+                                <input type="text" required="" name="nombre">
+                            </div>
+                            <div>
+                                <span> Apellido </span>
+                                <input type="text" required="" name="apellido">
+                            </div>
+                        </div>
+                <div class="derecha">
+                <div>
+                    <span>Telefono</span>
+                    <input type="tel" name="telefono">
+                </div>
+                <div>
+                    <span>Tu Email</span>
+                    <input type="email" required="" name="email">
+                </div>
+                </div>
+
+                <div class="asunto">
+                    <span>Asunto</span>
+                    <select name="asunto">
+                        <option value="eve">Eventos/Excuersiones</option>
+                        <option value="info">Información Sidney</option>
+                        <option value="ocons">otras consultas</option>
+                    </select>
+                </div>
+                <div class="consul">
+                    <span>Consulta</span>
+                    <textarea class="consulta" rows="5" cols="500" required="" name="consulta"></textarea>
+                </div>
+
+                <div>
+                    <button type="submit" id="enviar">Enviar</button>
+                </div>
+
+                </form>
+            </section>
+        </div>
+   
+    
+    </main>
+
+    <footer>
+        <section class="menufootercontenedor">
+            <div class="menufooter">
+                <h2 class="titufoo-dere">Información</h2>
+                <div class="fooderecha">
+                    <ul>
+                        <li>
+                            <a href="#titulo1">Sobre Sidney</a>
+                        </li>
+                        <li>
+                            <a href="#titulo2">Clima Sidney</a>
+                        </li>
+                        <li>
+                            <a href="#titulo3">Transporte Sidney</a>
+                        </li>
+                        <li>
+                            <a href="#titulo4">Mapa</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="menufooter">
+                <h2 class="titufoo-izqui">Intinerario</h2>
+                <div class="fooizquierda">
+                    <ul>
+                        <li>
+                            <a href="quehacer.html#lugar1">Opera Sidney</a>
+                        </li>
+                        <li>
+                            <a href="quehacer.html#lugar2">Puente Sidney</a>
+                        </li>
+                        <li>
+                            <a href="quehacer.html#lugar3">Playa Bondi</a>
+                        </li>
+                        <li>
+                            <a href="quehacer.html#lugar4">Barrio Rock</a>
+                        </li>
+                        <li>
+                            <a href="quehacer.html#lugar5">Zologico</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </section>
+        <div id="info">
+            <ul>
+                <li> Alexis Costedoat</li>
+                <li>Maquetado y desarrolllo web</li>
+                <li>Profesora Mabel Garcia</li>
+                <li>Tp del primer cuatrimestre del 2020</li>
+            </ul>
+        </div>
+    </footer>
+    </div>
+</body>
+
+</html>

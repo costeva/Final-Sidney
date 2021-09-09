@@ -1,0 +1,538 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  overflow-x: hidden;
+}
+body {
+  background-color: white;
+  color: #484848;
+  font-family: "Lato", sans-serif;
+}
+
+.principal {
+  margin: auto;
+  max-width: 1366px;
+}
+
+.navio {
+  position: static;
+  margin: auto;
+  padding-bottom: 20px;
+  width: 100%;
+  height: 70px;
+  box-shadow: 0px 0px 5px blue;
+  background-image: url(../elementos/deco.png);
+  background-repeat: no-repeat;
+  background-position-x: 95%;
+  border-bottom: solid 3px #2828f8;
+}
+
+.menu li {
+  display: inline-block;
+}
+
+.menu li a,
+.menu li > span {
+  display: block;
+  padding: 2px 20px;
+  color: #484848;
+  font-family: sans-serif;
+  font-size: 25px;
+  text-decoration: none;
+  margin-top: 9px;
+}
+
+.menu li a:hover {
+  color: blue;
+}
+
+.submenu {
+  position: absolute;
+  display: none;
+  padding-left: 10px;
+}
+
+.submenu li a {
+  color: #484848;
+  font-family: sans-serif;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.menu li:hover .submenu {
+  background-color: white;
+  display: block;
+}
+
+.slidervid {
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+}
+
+.slidervid video {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -350px;
+}
+
+.cabeza {
+  margin: auto;
+  padding: 45px 0px;
+  text-align: center;
+  color: #484848;
+}
+
+.cabeza h1 {
+  font-size: 100px;
+  font-family: "Dancing Script", cursiva;
+  text-shadow: rgba(0, 0, 0, 0.2) 1px 5px 2px;
+}
+
+.cabeza p {
+  font-size: 25px;
+  padding-top: 10px;
+  text-shadow: rgba(0, 0, 0, 0.2) 1px 2px 2px;
+}
+
+.centro {
+  background-color: white;
+  max-width: 1200px;
+  margin: auto;
+  padding-top: 25px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 10px;
+}
+
+.centro > h2 {
+  margin: 10px auto;
+  text-align: center;
+  font-size: 35px;
+  background-image: url(../elementos/ciudadfinal.png);
+  height: 270px;
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+  border-bottom: solid 3px #2828f8;
+  background-size: contain;
+  text-shadow: rgba(0, 0, 0, 0.2) 1px 5px 2px;
+}
+
+.contenedorizquierda {
+  max-width: 580px;
+  float: left;
+  padding-left: 20px;
+  width: 50%;
+  box-sizing: border-box;
+}
+
+.text {
+  padding: 30px;
+}
+
+.text h2 {
+  margin-bottom: 10px;
+}
+
+.contenedorderecha {
+  float: left;
+  max-width: 580px;
+  width: 50%;
+}
+
+img {
+  max-width: 100%;
+}
+
+.bloque {
+  overflow: hidden;
+}
+
+#vime {
+  padding-top: 10px;
+}
+
+.fondo {
+  background-image: url(../elementos/Sidney-1.jpg);
+  background-repeat: no-repeat;
+}
+
+.fondo iframe {
+  padding-left: 15%;
+  margin: 2%;
+  border: none;
+}
+
+.mapa {
+  max-width: 100%;
+}
+
+.mapa > h2 {
+  text-align: center;
+  padding: 40px 0px 50px 0px;
+  background-color: white;
+  max-width: 100%;
+  margin: auto;
+  font-size: 40px;
+  font-weight: 20px;
+  background-image: url(../elementos/logoubicacion2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+li {
+  list-style: none;
+}
+
+.menufootercontenedor {
+  overflow: hidden;
+  background-color: #4796f0;
+  margin-top: 0;
+  background-image: url(../elementos/logoagencia.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-bottom: solid 3px white;
+}
+
+.menufooter {
+  width: 50%;
+  float: left;
+  padding: 0;
+  text-align: center;
+  line-height: 2;
+  margin: 10px auto;
+}
+
+.titufoo-dere,
+.titufoo-izqui {
+  margin-left: 40px;
+  margin-bottom: 0px;
+  color: white;
+}
+
+.fooderecha ul li > a {
+  text-decoration: none;
+  margin-left: 40px;
+  color: white;
+  padding: 0;
+}
+
+.fooizquierda ul li > a {
+  text-decoration: none;
+  margin-left: 40px;
+  color: white;
+  padding: 0;
+}
+
+.fooderecha ul li a:hover {
+  font-weight: 800;
+}
+
+.fooizquierda ul li a:hover {
+  font-weight: 800;
+}
+
+#info {
+  background-color: #2828f8;
+  color: white;
+  text-align: center;
+  margin: auto;
+}
+
+@media screen and (max-width: 800px) {
+  .principal {
+    max-width: 800px;
+  }
+  .navio {
+    padding-bottom: 20px;
+    width: 100%;
+    height: 50px;
+    box-shadow: 0px 0px 5px blue;
+    background-image: url(../elementos/decomobile.png);
+  }
+  .menu li a,
+  .menu li > span {
+    padding: 1px 10px;
+    font-size: 20px;
+  }
+  .submenu li a {
+    padding: 8px;
+    font-size: 15px;
+  }
+
+  .slidervid {
+    height: 280px;
+  }
+  .slidervid video {
+    position: absolute;
+    left: -270px;
+    right: 0;
+    top: -360px;
+  }
+
+  .centro {
+    background-color: white;
+    max-width: 580px;
+    margin: auto;
+    padding-top: 25px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 10px;
+  }
+
+  .contenedorizquierda,
+  .contenedorderecha {
+    width: 100%;
+    float: none;
+    padding-left: 0px;
+  }
+
+  .text {
+    padding: 20px;
+  }
+
+  .text h2 {
+    margin-bottom: 10px;
+  }
+
+  #imgemobile {
+    position: absolute;
+    float: none;
+    top: 0px;
+  }
+
+  #txtemobile {
+    padding-top: 334px;
+    float: none;
+  }
+  .bloque {
+    position: relative;
+  }
+
+  .fondo iframe {
+    width: 350px;
+    padding-left: 16%;
+    margin: 4%;
+    border: none;
+    height: 200px;
+  }
+  .mapa iframe {
+    max-width: 800px;
+    height: 250px;
+  }
+  .titufoo-dere {
+    font-size: 25px;
+    margin-left: -30px;
+  }
+
+  .titufoo-izqui {
+    font-size: 25px;
+    margin-left: 30px;
+  }
+
+  .fooderecha ul li > a {
+    margin-left: 0px;
+    margin-right: 30px;
+  }
+  .fooizquierda ul li > a {
+    margin-left: 0px;
+    margin-right: -30px;
+  }
+  #info {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .principal {
+    max-width: 480px;
+  }
+
+  .navio {
+    background-image: url(../elementos/decomobile.png);
+    height: 30px;
+    box-shadow: none;
+  }
+
+  .btn-hamguerger {
+    width: 40px;
+    height: 40px;
+    background-image: url(../elementos/menu.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    text-indent: -999999px;
+    margin: 10px 0 0 10px;
+  }
+
+  #menu {
+    display: none;
+    position: absolute;
+    z-index: 5;
+    background-color: #ccc;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+  }
+
+  #menu > li {
+    display: block;
+  }
+
+  #menu:target {
+    display: block;
+  }
+
+  .menu li a.btn-close {
+    width: 40px;
+    height: 40px;
+    background-image: url(../elementos/cerrar.png);
+    text-indent: -999999px;
+    padding: 0;
+    margin: 10px 0 0 10px;
+  }
+
+  .submenu {
+    position: static;
+  }
+
+  .submenu li {
+    display: block;
+  }
+
+  .centro {
+    max-width: 350px;
+  }
+
+  .slidervid {
+    height: 200px;
+  }
+
+  .slidervid video {
+    right: -500px;
+  }
+
+  .cabeza h1 {
+    font-size: 60px;
+  }
+
+  .cabeza p {
+    font-size: 18px;
+  }
+
+  .centro {
+    max-width: 350px;
+  }
+
+  .contenedorizquierda {
+    max-width: 350px;
+    float: none;
+    margin-left: 0px;
+  }
+
+  .text {
+    padding: 20px;
+  }
+
+  .text h2 {
+    margin-bottom: 10px;
+  }
+
+  .contenedorderecha {
+    float: none;
+    margin-left: 0px;
+    max-width: 350px;
+  }
+
+  #imgemobile {
+    position: absolute;
+    float: none;
+    top: 0px;
+  }
+
+  #txtemobile {
+    padding-top: 334px;
+    float: none;
+  }
+  .bloque {
+    position: relative;
+  }
+
+  .bloque img {
+    width: 350px;
+    text-align: center;
+  }
+
+  .fondo {
+    background-image: url(../elementos/sidneymobile-2.jpg);
+  }
+  .fondo iframe {
+    text-align: center;
+    width: 300px;
+    padding-left: 5%;
+    margin: 2%;
+    border: none;
+    height: 200px;
+  }
+
+  .mapa {
+    max-width: 100%;
+  }
+
+  .mapa iframe {
+    width: 480px;
+    height: 200px;
+  }
+
+  .mapa > h2 {
+    font-size: 30px;
+    font-weight: 30px;
+  }
+
+  .menufootercontenedor {
+    background-image: url(../elementos/Logoemobile.png);
+    max-width: 480px;
+  }
+
+  .menufooter {
+    line-height: 1.5;
+  }
+
+  .titufoo-dere {
+    font-size: 25px;
+    margin-left: -30px;
+  }
+
+  .titufoo-izqui {
+    font-size: 25px;
+    margin-left: 30px;
+  }
+
+  .fooderecha ul li > a {
+    margin-left: 0px;
+    margin-right: 30px;
+  }
+  .fooizquierda ul li > a {
+    margin-left: 0px;
+    margin-right: -30px;
+  }
+
+  .fooderecha ul li a:hover {
+    font-weight: 800;
+  }
+
+  .fooizquierda ul li a:hover {
+    font-weight: 800;
+  }
+
+  #info {
+    font-size: 10px;
+    text-align: center;
+  }
+}
+
+@media all and (min-width: 480px) {
+  .menu li a.btn-close,
+  .btn-hamguerger {
+    display: none;
+  }
+}

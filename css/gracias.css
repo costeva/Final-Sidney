@@ -1,0 +1,42 @@
+.banner {
+  background-image: url(../elementos/Sidney-1.jpg);
+  background-repeat: no-repeat;
+  height: 350px;
+  color: white;
+  background-attachment: fixed;
+  background-size: cover;
+  text-align: center;
+  position: relative;
+}
+
+.msj {
+  position: relative;
+  z-index: 2;
+}
+.msj h2 {
+  font-size: 45px;
+  padding: 50px;
+
+  text-shadow: 5px 5px 5px #000;
+}
+
+.centro {
+  padding-top: 0;
+}
+
+.banner p {
+  font-size: 20px;
+  text-shadow: 5px 5px 5px #000;
+}
+
+.banner::before {
+  content: "";
+  top: 0;
+  left: 0;
+  opacity: 0.8;
+  z-index: 1;
+  background: linear-gradient(180deg, white 2%, #4796f0);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
